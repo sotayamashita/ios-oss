@@ -5,7 +5,9 @@ SCHEME ?= $(TARGET)-$(PLATFORM)
 TARGET ?= Kickstarter-Framework
 PLATFORM ?= iOS
 RELEASE ?= itunes
-IOS_VERSION ?= 14.0
+# Modified to fix xcodebuild: error: Unable to find a destination matching the provided destination specifier: { platform:iOS Simulator, OS:14.0, name:iPhone 8 }
+IOS_VERSION ?= 14.1
+# IOS_VERSION ?= 14.0
 IPHONE_NAME ?= iPhone 8
 BRANCH ?= master
 DIST_BRANCH = $(RELEASE)-dist
